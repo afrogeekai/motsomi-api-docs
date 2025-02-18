@@ -1,9 +1,9 @@
+import HelloWorld from "./pages/HelloWorld"
+
 function App() {
 
   return (
-    <div className='bg-pink-500'>
-      hello world
-    </div>
+    <HelloWorld />
   )
 }
 
