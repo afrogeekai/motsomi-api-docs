@@ -16,16 +16,3 @@ export const fetchData = async () => {
         console.log("Error getting post:", error);
     }
 };
-
-interface DeleteDataResponse {
-    id: number;
-}
-
-const deleteData = async (id: number): Promise<void> => {
-    try {
-        await axios.delete<DeleteDataResponse>(`https://jsonplaceholder.typicode.com/posts/${id}`);
-        console.log("Post deleted:", id);
-    } catch (error) {
-        console.error("Error deleting post:", error);
-    }
-};
