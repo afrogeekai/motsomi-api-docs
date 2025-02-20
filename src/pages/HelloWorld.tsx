@@ -5,6 +5,7 @@ const HelloWorld = () => {
             data-testid="para-text"
             >
                 Hello world
+               TESTING DOCKER 
             </p>
         </div>)
 }

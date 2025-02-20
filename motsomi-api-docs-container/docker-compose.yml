@@ -1,0 +1,15 @@
+services:
+  motsomi-api-docs:
+    image: node:alpine
+    container_name: motsomi-api-docs
+    entrypoint: /bin/sh
+    ports:
+      - 3000:3000
+      #  - 24678:24678
+    working_dir: /srv/app
+    volumes:
+      - type: bind
+        source: ../
+        target: /srv/app
+    tty: true
+    
